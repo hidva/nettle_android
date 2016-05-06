@@ -20,6 +20,7 @@
 *   最关键是,为什么不使用 openssl,因为在我这个时代(20160507),Openssl 还不支持构建 Android
     64 位 so!!!天啦撸
 
+*   可以在[CommonInAndroidDemo][2]这里发现该项目的测试用例
 
 
 ## 参考
@@ -29,3 +30,4 @@
 
 [0]: <https://git.lysator.liu.se/nettle/nettle>
 [1]: <https://www.lysator.liu.se/~nisse/nettle/>
+[2]: <https://github.com/pp-qq/CommonInAndroidDemo>
