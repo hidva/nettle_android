@@ -1,5 +1,3 @@
-#ifndef __BYOD_STDINT_H
-#define __BYOD_STDINT_H 1
 #ifndef _GENERATED_STDINT_H
 #define _GENERATED_STDINT_H " "
 /* generated using gnu compiler i686-apple-darwin11-llvm-gcc-4.2 (GCC) 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.11.00) */
@@ -283,5 +281,4 @@ typedef           long   intptr_t;
   /* shortcircuit*/
 #endif
   /* once */
-#endif
 #endif

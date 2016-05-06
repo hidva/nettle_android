@@ -16,9 +16,9 @@ extern "C" {
 struct nettle_cipher
 {
   const char *name;
-  
+
   unsigned context_size;
-  
+
   /* Zero for stream ciphers */
   unsigned block_size;
 
@@ -65,7 +65,7 @@ struct nettle_cipher
   (nettle_crypt_func *) name##_crypt,			\
 }
 
-#define _BYOD_CIPHER_SAME(name, NAME, key_size) {\
+#define _NETTLE_CIPHER_SAME(name, NAME, key_size) {\
   #name #key_size,					\
   sizeof(struct name##_ctx),				\
   NAME##_BLOCK_SIZE,					\
@@ -76,7 +76,7 @@ struct nettle_cipher
   (nettle_crypt_func *) name##_encrypt,			\
 }
 
-#define _BYOD_CIPHER_FIX(name, NAME) {	\
+#define _NETTLE_CIPHER_FIX(name, NAME) {	\
   #name,						\
   sizeof(struct name##_ctx),				\
   NAME##_BLOCK_SIZE,					\
@@ -124,7 +124,7 @@ struct nettle_hash
 
   /* Size of digests */
   unsigned digest_size;
-  
+
   /* Internal block size */
   unsigned block_size;
 
@@ -141,7 +141,7 @@ struct nettle_hash
  (nettle_hash_init_func *) name##_init,		\
  (nettle_hash_update_func *) name##_update,	\
  (nettle_hash_digest_func *) name##_digest	\
-} 
+}
 
 /* null-terminated list of digests implemented by this version of nettle */
 extern const struct nettle_hash * const nettle_hashes[];
@@ -173,7 +173,7 @@ struct nettle_armor
   nettle_armor_length_func *encode_length;
   nettle_armor_encode_update_func *encode_update;
   nettle_armor_encode_final_func *encode_final;
-  
+
   nettle_armor_init_func *decode_init;
   nettle_armor_length_func *decode_length;
   nettle_armor_decode_update_func *decode_update;
