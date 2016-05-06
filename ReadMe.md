@@ -1,7 +1,7 @@
 
 ## 模块介绍
 
-*   nettle 加解密的 Android 构建.首先 nettle 官方是没提供 Android 构建支持的,而且其原生构
+*   [nettle][0] 加解密的 Android 构建.首先 nettle 官方是没提供 Android 构建支持的,而且其原生构
     建方式是:
 
     ```shell
@@ -22,4 +22,10 @@
 
 
 
+## 参考
 
+*   [nettle.git][0]
+*   [nettle 官网][1]
+
+[0]: <https://git.lysator.liu.se/nettle/nettle>
+[1]: <https://www.lysator.liu.se/~nisse/nettle/>
