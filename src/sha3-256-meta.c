@@ -6,7 +6,7 @@
 
 #include "nettle-meta.h"
 
-#include "sha3.h"
+#include "nettle/sha3.h"
 
 const struct nettle_hash nettle_sha3_256
 = _NETTLE_HASH(sha3_256, SHA3_256);

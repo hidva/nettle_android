@@ -10,7 +10,7 @@
 #include <stddef.h>
 #include <string.h>
 
-#include "sha3.h"
+#include "nettle/sha3.h"
 
 #include "nettle-write.h"
 

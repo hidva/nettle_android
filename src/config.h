@@ -1,6 +1,9 @@
 /* config.h.  Generated from config.h.in by configure.  */
 /* config.h.in.  Generated from configure.ac by autoheader.  */
 
+/* 已经经过检测,该文件中所有会被其他地方使用到的宏都已经定义正确.请放心食用.
+ */
+
 /* Define if building universal (internal helper macro) */
 /* #undef AC_APPLE_UNIVERSAL_BUILD */
 
@@ -39,6 +42,7 @@
 
 /* Define to 1 if you have the <malloc.h> header file. */
 /* #undef HAVE_MALLOC_H */
+#define HAVE_MALLOC_H 1
 
 /* Define to 1 if you have the <memory.h> header file. */
 //#define HAVE_MEMORY_H 1
@@ -134,9 +138,9 @@
 /* If using the C implementation of alloca, define if you know the
    direction of stack growth for your system; otherwise it will be
    automatically deduced at runtime.
-	STACK_DIRECTION > 0 => grows toward higher addresses
-	STACK_DIRECTION < 0 => grows toward lower addresses
-	STACK_DIRECTION = 0 => direction of growth unknown */
+    STACK_DIRECTION > 0 => grows toward higher addresses
+    STACK_DIRECTION < 0 => grows toward lower addresses
+    STACK_DIRECTION = 0 => direction of growth unknown */
 /* #undef STACK_DIRECTION */
 
 /* Define to 1 if you have the ANSI C header files. */

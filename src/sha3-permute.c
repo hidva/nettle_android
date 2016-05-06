@@ -7,7 +7,7 @@
 # include "config.h"
 #endif
 
-#include "sha3.h"
+#include "nettle/sha3.h"
 
 #include "macros.h"
 
@@ -32,7 +32,7 @@ sha3_permute (struct sha3_state *state)
   };
 
   /* Original permutation:
-     
+
        0,10,20, 5,15,
       16, 1,11,21, 6,
        7,17, 2,12,22,

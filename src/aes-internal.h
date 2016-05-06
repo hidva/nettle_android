@@ -6,7 +6,7 @@
 #ifndef NETTLE_AES_INTERNAL_H_INCLUDED
 #define NETTLE_AES_INTERNAL_H_INCLUDED
 
-#include "aes.h"
+#include "nettle/aes.h"
 
 /* Name mangling */
 #define _aes_encrypt _nettle_aes_encrypt
@@ -65,7 +65,7 @@ _aes_decrypt(const struct aes_ctx *ctx,
   | ((uint32_t) T->sbox[ B1(w1) ] << 8)			\
   | ((uint32_t) T->sbox[ B2(w2) ] << 16)		\
   | ((uint32_t) T->sbox[ B3(w3) ] << 24)) ^ (k))
-     
+
 /* Globally visible so that the same sbox table can be used by aes_set_encrypt_key */
 
 extern const struct aes_table _aes_encrypt_table;
