@@ -6,7 +6,7 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE :=  nettle
+LOCAL_MODULE := nettle
 
 
 ifdef $(LOCAL_MODULE)_c_includes
@@ -52,6 +52,7 @@ LOCAL_CFLAGS += -DHAVE_CONFIG_H=1
 
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/include/ $(LOCAL_PATH)/src
 LOCAL_EXPORT_C_INCLUDES += $(LOCAL_PATH)/include/ $(LOCAL_PATH)/src
+
 
 include $(BUILD_STATIC_LIBRARY)
 

@@ -2,7 +2,7 @@
  *
  * The aes/rijndael block cipher.
  */
- 
+
 #ifndef NETTLE_AES_H_INCLUDED
 #define NETTLE_AES_H_INCLUDED
 
@@ -27,6 +27,10 @@ extern "C" {
 #define AES_MAX_KEY_SIZE 32
 
 #define AES_KEY_SIZE 32
+
+#define AES128_KEY_SIZE 16
+#define AES192_KEY_SIZE 24
+#define AES256_KEY_SIZE 32
 
 /* FIXME: Change to put nrounds first, to make it possible to use a
    truncated ctx struct, with less subkeys, for the shorter key
