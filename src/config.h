@@ -155,7 +155,6 @@
 /* Define if you have openssl's libcrypto (used for benchmarking) */
 //#define WITH_OPENSSL 1
 
-// TODO(wangwei) 这里要根据机型配置.
 /* Define WORDS_BIGENDIAN to 1 if your processor stores words with the most
    significant byte first (like Motorola and SPARC, unlike Intel). */
 #if defined AC_APPLE_UNIVERSAL_BUILD
